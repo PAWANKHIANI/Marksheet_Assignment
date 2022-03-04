@@ -1,0 +1,44 @@
+void main() {
+  //Marksheet
+
+  int cal =87;
+  int pf =89;
+  int eng =73;
+  int phy =67;
+  int chem =72;
+  int total = 500;
+
+  print("*********************MARKSHEET**********************");
+
+  var obt = cal + pf + eng + phy + chem;
+  var result = (obt / total);
+  num percentage = result * 100;
+  print("\nThe Obtain marks are: $obt");
+  print("The Total marks are: $total");
+  print("The Percentage is: $percentage%");
+
+  if (percentage >= 100) {
+    print("Your Grade is A");
+  } else if (percentage >= 90) {
+    print("Your Grade is A-");
+  } else if (percentage >= 85) {
+    print("Your Grade is B");
+  } else if (percentage >= 80) {
+    print("Your Grade is B+");
+  } else if (percentage >= 75) {
+    print("Your Grade is B-");
+  } else if (percentage >= 70) {
+    print("Your Grade is C");
+  } else if (percentage >= 65) {
+    print("Your Grade is C+");
+  } else if (percentage >= 60) {
+    print("Your Grade is C-");
+  } else if (percentage >= 55) {
+    print("Your Grade is D");
+  } else if (percentage >= 50) {
+    print("Your Grade is D-");
+  } else {
+    print("Your Grade is F.");
+    print("We Are Sorry You Have Failed This Course");
+  }
+}
